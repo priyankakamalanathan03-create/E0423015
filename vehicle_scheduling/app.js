@@ -1,22 +1,16 @@
 const axios = require("axios");
 
-// =======================
-// YOUR ACCESS TOKEN
-// =======================
+
 const TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiYXVkIjoiaHR0cDovLzIwLjI0NC41Ni4xNDQvZXZhbHVhdGlvbi1zZXJ2aWNlIiwiZW1haWwiOiJwcml5YW5rYWthbWFsYW5hdGhhbjAzQGdtYWlsLmNvbSIsImV4cCI6MTc4MTA3MTkzMywiaWF0IjoxNzgxMDcxMDMzLCJpc3MiOiJBZmZvcmQgTWVkaWNhbCBUZWNobm9sb2dpZXMgUHJpdmF0ZSBMaW1pdGVkIiwianRpIjoiNjdlMTNlMjYtZjdlZi00MzNjLTg5OGYtYTgxOTI0NGZlYTA4IiwibG9jYWxlIjoiZW4tSU4iLCJuYW1lIjoicHJpeWFua2EgayIsInN1YiI6Ijk3MGNlNTYzLTQ4NjAtNGZhZC04NDM1LTBlZTY0YzgwMGE4MiJ9LCJlbWFpbCI6InByaXlhbmtha2FtYWxhbmF0aGFuMDNAZ21haWwuY29tIiwibmFtZSI6InByaXlhbmthIGsiLCJyb2xsTm8iOiJlMDQyMzAxNSIsImFjY2Vzc0NvZGUiOiJEdndFRFoiLCJjbGllbnRJRCI6Ijk3MGNlNTYzLTQ4NjAtNGZhZC04NDM1LTBlZTY0YzgwMGE4MiIsImNsaWVudFNlY3JldCI6InJoamFRRHRzSGZ0QlNZUU0ifQ._FJeSK3yqiuDxUqg1NG9PDnkGP2OGGuPy6f1eyERPrw";
 
-// =======================
-// API URLs
-// =======================
+
 const DEPOTS_API =
   "http://4.224.186.213/evaluation-service/depots";
 
 const VEHICLES_API =
   "http://4.224.186.213/evaluation-service/vehicles";
 
-// =======================
-// KNAPSACK FUNCTION
-// =======================
+
 function knapsack(vehicles, maxHours) {
   const n = vehicles.length;
 
@@ -56,9 +50,7 @@ function knapsack(vehicles, maxHours) {
   };
 }
 
-// =======================
-// MAIN FUNCTION
-// =======================
+
 async function main() {
   try {
     const headers = {
